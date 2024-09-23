@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+ 
+} */
+header {
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #0707bb;
+  
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-left: 1em;
+}
+.logo {
+    border-radius: 50px;
+}
+.name {
+    color: #0707bb;  
+    font-weight: bolder;
+}
+.navigation {
+    display: flex;
+    width: 65%;
+    justify-content: space-around; 
+    align-items: center;
+    border: 1px solid #ffffff27;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #fff;   
+}
+.navigation ul {
+    display: flex;
+    color: #0707bb;
+    list-style-type: none;
+} 
+.navigation ul li {
+    font-size: 19px;
+    margin: 0 1em;
+}
+.navigation a {
+    text-decoration: none;
+}
+
+button {
+    color: #fff;
+    width: 100px;
+    padding: 5px;
+    background-color: #0707bb;
+    border: none;
+    border-radius: 5px;
+}
+
+
+        /* main */
+main {
+    padding-bottom: 20rem;
+    background-image: url("./Assets/lottery-3846567_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3em;
+}
+
+
+.lotto-companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+.baba-ijebu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 15px 0;
+    background-color: #808080;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.baba-ijebu:hover {
+    background-color: #db0808d5;
+    outline: 1px solid #fff;
+    opacity: 1;
+}
+.baba-ijebu img {
+    border-radius: 50%;
+}
+.baba-ijebu:hover .result-year {
+    opacity: 1;
+    background-color: #db0808ce;
+}
+
+.result-year {
+    position: absolute;
+    top: 20%; 
+    width: 60%;
+    text-align: center;
+    list-style-position: inside;
+    opacity: 0; 
+    transition: 0.4s ease-in;
+}
+h2 {
+    display: block; 
+    color: #fff; 
+    padding: 5px 10px;  
+    margin: 10px; 
+    border-radius: 5px;
+    font-size: 1.2em; 
+    font-weight: bolder;
+}
+.result-year li {
+    width: 95%;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.result-year li:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.result-year li a {
+    text-decoration: none;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.result-year li a:hover {
+    color: #fff !important;
+    text-decoration: underline;
+    background-color: transparent;
+    transition: 0.4s ease-out;
+}
+
+.green-lotto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #808080;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+.green-lotto:hover {
+    background-color: #026b02ce;
+    outline: 1px solid #fff;
+    opacity: 1;
+}
+.green-lotto img {
+    border-radius: 5px;
+}
+.green-lotto:hover .result-year {
+    opacity: 1;              
+    background-color: #026b02ea;  
+}
+
+
+.lotto-material {
+    position: relative;
+    background-color: #0000009c
+}
+.lotto-material p {
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+.lotto-material .background img {
+    position: absolute; 
+    width: 100%;
+    opacity: 0.2;      
+}
+
+
+
+
+
