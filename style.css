@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body {
- 
-} */
+
+body {
+    height: 100vh;
+}
 header {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     background-color: #fff;
     border-bottom: 1px solid #0707bb;
   
@@ -57,11 +58,11 @@ nav {
 }
 
 button {
-    color: #fff;
+    /* color: #0707bb; */
     width: 100px;
     padding: 5px;
-    background-color: #0707bb;
-    border: none;
+    /* background-color: #0707bb; */
+    /* border: none; */
     border-radius: 5px;
 }
 
@@ -97,14 +98,14 @@ h1{
     align-items: center;
     width: 300px;
     padding: 15px 0;
-    background-color: #808080;
-    border-radius: 10px;
-    opacity: 0.7;
-}
-.baba-ijebu:hover {
     background-color: #db0808d5;
+    border-radius: 10px;
+}
+.baba-ijebu:hover,
+.green-lotto:hover {
+    box-shadow: 2px 2px 15px 5px #000;
     outline: 1px solid #fff;
-    opacity: 1;
+    transition: 0.4s;
 }
 .baba-ijebu img {
     border-radius: 50%;
@@ -164,14 +165,8 @@ h2 {
     width: 300px;
     padding: 15px 0;
     text-align: center;
-    background-color: #808080;
+    background-color: #026b02ea;
     border-radius: 10px;
-    opacity: 0.7;
-}
-.green-lotto:hover {
-    background-color: #026b02ce;
-    outline: 1px solid #fff;
-    opacity: 1;
 }
 .green-lotto img {
     border-radius: 5px;
@@ -195,6 +190,73 @@ h2 {
     position: absolute; 
     width: 100%;
     opacity: 0.2;      
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+aside p {
+    font-size: 24px;
+}
+aside p span {
+    color: #008000;
+    font-weight: bolder;
+}
+aside img {
+    border-radius: 10px;
+}
+aside a {
+    color: #fff;
+    width: 500px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-color: #0707bb;
+    border: 1px solid #0707bb00;
+    border-radius: 20px;
+    font-size: 20px;
+}
+aside a .fa-solid {
+    display: none;
+    margin-left: 10px; 
+}
+aside a:hover {
+        color: #0707bb;
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid #0707bb;
+        transition: 0.4s;
+}
+aside a:hover .fa-solid {
+    display: inline;
+    transition: 0.4s;
+}
+
+
+footer {
+    padding: 10px 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+    background-color:  #0707bb04; 
+    border: 1px solid #0707bb09;
+    font-size: 24px;
+}
+footer p {
+    margin: 10px 0 20px;
+}
+footer .icon {
+    color: #0707bb;
+    padding: 10px;
+    margin: 0 25px;
+    font-size: 24px;
+}
+footer .icon:hover {
+    color: #000;
 }
 
 
