@@ -35,11 +35,90 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
 <body>
-    <header>
+   
+    <header style="background-color: #fff; width: 100%; margin: 0; color: #085178; padding: 5px 0;">
+        <nav style="display: flex; justify-content: space-around; align-items: center;">
+            <div style="display: flex; justify-content: space-between; align-items: center; ">
+              <div class="brand" style="display: flex; align-items: center; gap: 10px">
+                <img class="logo" src="VLB_logo-removebg-preview 200px.png" width="50px" style="background-color: #fff; border-radius: 50%;">
+                <h1 class="name" style="font-size: 18px; font-family: Montserrat, serif;">Visual Lotto Board</h1>
+              </div>
+            </div>
+            <div>
+              <ul style="list-style: none; display: flex; gap: 3rem ; font-size: 18px; font-family: Lato, serif;">
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul style="list-style: none; display: flex; gap: 3rem ; font-size: 18px; font-family: Open Sans;">
+                <li><a href="">Day Result</a></li>
+                <li><a href="">Play Now</a></li>
+                <li><a href="">Classification Chart</a></li>
+                <li><a href="" id="logIn" style="color: #fff; background-color: #085178; padding: 10px 25px; border-radius: 10px;">Log in</a></li>
+              </ul>
+            </div>
+            <!-- <div>
+               <ul style="display: flex; color:#085178;; gap: 30px; justify-content: space-around;  width: 100%; margin: 5px 0;">
+                 <li><a href style="background-color:#085178; color: #fff; padding: 10px 20px; border-radius: 5px; border: none;">Play Now</a></li>
+                 <li><a href style="background-color:#085178; color: #fff; padding: 10px 20px; border-radius: 5px; border: none;">Day Result</a></a></li>
+                 <li><a href style="background-color:#085178; color: #fff; padding: 10px 20px; border-radius: 5px; border: none;">Classification Chart</a></li>
+                 <li><a href style="background-color:#085178; color: #fff; padding: 10px 20px; border-radius: 5px; border: none;">Updates</a></li>
+               </ul>
+            </div> -->
+        </nav>
+    </header>
+    <main style="font-family: Source Code Pro; margin: 2rem auto; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+       <h2 style=" text-align: center; color: #fff;">Welcome to Visual Lotto Board</h2>
+
+       <section class="carousel" style="height: 300px; border: 1px solid #fff; margin: 1rem;">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, inventore tempora nostrum obcaecati reiciendis voluptatum. Iusto molestiae exercitationem, mollitia nobis dolor optio obcaecati atque ducimus vero veritatis aspernatur similique dolorem.</p>
+       </section>
+
+       
+         <section class="lotto-company" style=" display: flex; gap: 4rem;">
+            <!--baba ijebu -->
+            <div class="baba-ijebu" style="background-color: #fff; width: 100%; height: 100%; display: block; border-radius: 10px; color: #ff0000; text-decoration: none; font-weight: 400; width: 300px; height: 450px; margin: 30px 0;">
+              <h2 style="font-size: 18px; text-align: center; ">Premier Lotto (Baba Ijebu)</h2>
+              <img src="premierlotto.fw.png" alt="Premeir lotto (baba-ijebu)" width="250" height="180" style="display: block; margin: 10px auto; border-radius: 10px;">
+              <p style="text-align: justify; margin: 30px; color: #000;">Check all Baba Ijebu game results. Choose year below</p>
+
+              <ul style="list-style-position: inside; margin-left: 30px;">
+                <li style="margin: 15px 0;"><a href="/baba-ijebu/year/2024/result.html">2024 results</a></li>
+                <li style="margin: 15px 0;"><a href="">2025 results</a></li>
+              </ul>
+            </div>
+
+            <div class="baba-ijebu" style="background-color: #fff; width: 100%; height: 100%; display: block; border-radius: 10px; color: green; text-decoration: none; font-weight: 400; width: 300px; height: 450px; margin: 30px 0;">
+              <h2 style="font-size: 18px; text-align: center; ">Green Lotto</h2>
+              <img src="https://i.postimg.cc/44t55Spg/Green-Lotto-removebg-preview.png" alt="Premeir lotto (baba-ijebu)" width="250" height="180" style="display: block; margin: 10px auto; border-radius: 10px;">
+              <p style="text-align: justify; margin: 30px; color: #000;">Check our 2025 available results.</p>
+
+              <ul style="list-style-position: inside; margin-left: 30px;">
+                <li style="margin: 15px 0;"><a href="">2025 results</a></li>
+             </ul>
+            </div>
+         </section>
+    </main>
+
+    <aside>
+      <h2>Want to become an agent?</h2>
+      <p>Get Green Lotto terminal and start selling</p>
+    </aside>
+
+    <footer>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae consectetur culpa quia voluptates, veniam modi quasi hic. Tempora suscipit praesentium non. Ducimus aperiam nisi deleniti ipsum sequi perspiciatis doloremque voluptate.</p>
+    </footer>
+    <!-- <header>
         <nav>
             <div class="brand">
                 <img class="logo" src="https://i.postimg.cc/ZRkV6yrs/VLB-logo-e.png" width="50px">
@@ -62,9 +141,9 @@
 
     <main>
         <h1>Welcome to Visual Lotto Board</h1>
-        <!-- <h3>... Digital Board</h3> -->
+        <h3>... Digital Board</h3> -->
 
-        <p style="color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; margin: 40px 0 20px;">Choose the lotto board you would like to view</p>
+        <!-- <p style="color: #fff; font-size: 1.5rem; font-weight: bold; text-align: center; margin: 40px 0 20px;">Choose the lotto board you would like to view</p>
 
         <section class="lotto-companies">
             <div class="baba-ijebu">
@@ -85,7 +164,7 @@
             </div>
         </section>  
        
-        <!-- <p style="font-size: 2rem; color: #fff; text-align: center;">Bringing All Your Lotto Needs Closer to You</p> -->
+        <p style="font-size: 2rem; color: #fff; text-align: center;">Bringing All Your Lotto Needs Closer to You</p>
         
         <section class="lotto-material">
             <p>Bringing All Your Lotto Needs Closer to You</p>
@@ -115,7 +194,30 @@
             <a href="https://m.me/109930914660224" target="_blank" class="icon" aria-label="connect on Messenger handle to Chat Us"><i class="fa-brands fa-facebook-messenger"></i></a>
             <a href="http://www.youtube.com/@VisuaLottoBoard" target="_blank" class="icon" aria-label="connect on our YouTube channel, watch live demo of how to navigate our platform"><i class="fa-brands fa-youtube"></i></a>
         </div> 
-    </footer>
+    </footer> -->
+   
+   
+
+    <!-- <main style="display: flex; justify-content: center; align-items: center; gap: 40px;"> -->
+        <!-- <section style=" height: 300px;; display: block; margin: 0 2rem 20px; border: 1px solid #fff; border-radius: 10px;">
+       
+        </section> -->
+       <!-- <section class="lotto-company baba-ijebu" style="  border-radius: 10px; font-size: 30px;">
+          <a href="/baba-ijebu.html" style="text-align: center; display: flex; flex-direction: column; align-items: center; color: #fff;">
+            <img src="https://i.postimg.cc/brKC6YFn/premier-lotto.png" style="border-radius: 50%;">
+            <span style=" color: #ff0000; border-radius: 5px;">Premeir Lotto (baba-ijebu)</span>
+          </a>
+       </section>
+       <section class="lotto-company green-lotto" style="border-radius: 10px;">
+          <a href="" style="text-align: center; display: flex; flex-direction: column; align-items: center; color: #fff;">
+            <img src="https://i.postimg.cc/44t55Spg/Green-Lotto-removebg-preview.png" style="background-color: #fff;">
+          </a>
+       </section>
+    </main>
+
+    <footer style="position: absolute; right: 0; left: 0; bottom: 0;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolor tempore! Repellendus iure sequi illum dicta quaerat consequuntur quidem voluptatibus velit. Amet itaque laborum optio, unde numquam aliquam debitis perspiciatis.</p>
+    </footer> -->
 
      <!-- Google Tag Manager (noscript) -->
      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54JWWN2R"
